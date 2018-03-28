@@ -1582,3 +1582,11 @@
 					}
 
 	}
+
+	.work-repo-link{
+		text-decoration: none;
+	}
+
+	.project-technology{
+		font-size: 15px;
+	}
