@@ -1590,3 +1590,12 @@
 	.project-technology{
 		font-size: 15px;
 	}
+
+.project-name-container{
+		display: flex
+	}
+
+	#work-repo-link{
+		color: black;
+		margin-left: 10px;
+	}
