@@ -1627,3 +1627,8 @@
 	width: 50%;
 	margin-left: 60px;
 }
+
+.main-header{
+	display: flex;
+	align-items: center;
+}
