@@ -1632,3 +1632,11 @@
 	display: flex;
 	align-items: center;
 }
+
+.grid{
+	display: grid;
+	grid-template: repeat(2, 50%) /repeat(3, 1fr);
+}
+.grid < div {
+	padding: 0 10px 0 10px;
+}
