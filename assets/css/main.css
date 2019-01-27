@@ -232,7 +232,7 @@
 	}
 
 	.\34 u, .\34 u\24 {
-		width: 33.3333333333%;
+		width: 1fr;;
 		clear: none;
 		margin-left: 0;
 	}
@@ -445,7 +445,7 @@
 		}
 
 		.\34 u\28desktop\29, .\34 u\24\28desktop\29 {
-			width: 33.3333333333%;
+			width: 1fr;;
 			clear: none;
 			margin-left: 0;
 		}
@@ -660,7 +660,7 @@
 		}
 
 		.\34 u\28mobile\29, .\34 u\24\28mobile\29 {
-			width: 33.3333333333%;
+			width: 1fr;;
 			clear: none;
 			margin-left: 0;
 		}
@@ -740,6 +740,11 @@
 
 		.\-1u\28mobile\29 {
 			margin-left: 8.33333%;
+		}
+
+		.grid {
+			grid-template: repeat(3, 50%) /repeat(2, 1fr)!important;
+			grid-template: repeat(3, 50%) /repeat(2, 1fr);
 		}
 
 	}
@@ -1426,6 +1431,11 @@
 				font-size: 0.75em;
 			}
 
+			.grid {
+				grid-template: repeat(3, 50%) /repeat(2, 1fr)!important;
+				grid-column-gap: 3vw;
+			}
+
 	}
 
 /* Mobile */
@@ -1581,6 +1591,11 @@
 						display: none;
 					}
 
+		.grid{
+			grid-template: repeat(3, 50%) /repeat(2, 1fr)!important;
+			grid-column-gap: 3vw;
+		}
+
 	}
 
 	.work-repo-link{
@@ -1589,10 +1604,13 @@
 
 	.project-technology{
 		font-size: 15px;
+		display: flex;
+		justify-content: center;
 	}
 
 .project-name-container{
-		display: flex
+		display: flex;
+		justify-content: center;
 	}
 
 #work-repo-link{
@@ -1635,8 +1653,11 @@
 
 .grid{
 	display: grid;
-	grid-template: repeat(2, 50%) /repeat(3, 1fr);
+	grid-template: repeat(2, 50%) / repeat(3, 1fr);
+	grid-column-gap: 5vw;
 }
-.grid < div {
-	padding: 0 10px 0 10px;
+
+.grid > div {
+	display: flex;
+	flex-direction: column;
 }
